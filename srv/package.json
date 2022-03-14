@@ -1,0 +1,16 @@
+{
+  "cds": {
+    "requires": {
+      "CelsiusService": {
+        "kind": "odata",
+        "model": "srv\\external\\CelsiusService"
+      },
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "sqlite.db"
+        }
+      }
+    }
+  }
+}

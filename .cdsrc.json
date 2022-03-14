@@ -1,0 +1,44 @@
+{
+    "build": {
+        "target": ".",
+        "tasks": [
+            {
+                "for": "hana",
+                "options": {
+                    "model": [
+                        "db",
+                        "srv",
+                        "srv1"
+
+                    ]
+                }
+            },
+            {
+                "for": "java-cf",
+                "options": {
+                    "model": [
+                        "srv"
+                    ]
+                }
+            },
+            {
+                "for": "java-cf",
+                "src": "srv1",
+                "options": {
+                    "model": [
+                        "srv1"
+                    ]
+                }
+            }
+
+        ]
+    },
+    "requires": {
+        "db": {
+            "kind": "sql",
+            "[production]": {
+                "kind": "hana"
+            }
+        }
+    }
+}

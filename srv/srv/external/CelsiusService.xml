@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="CelsiusService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="Celsius" EntityType="CelsiusService.Celsius"/>
+      </EntityContainer>
+      <EntityType Name="Celsius">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
+        <Property Name="celsiusinput" Type="Edm.Double"/>
+      </EntityType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

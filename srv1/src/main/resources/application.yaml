@@ -1,0 +1,13 @@
+server:
+  port : 8083
+---
+spring:
+  config.activate.on-profile: default
+  datasource:
+    url: "jdbc:sqlite:/Users/I553829/Documents/microservice/convert/sqlite.db"
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+  sql:
+    init:
+      mode: never
