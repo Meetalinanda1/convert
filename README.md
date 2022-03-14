@@ -2,7 +2,10 @@
  celsius-fahrenheit-conversion
 
 steps:
-clone convert project from git.
+git clone https://github.com/Meetalinanda1/convert
+
 cds deploy --to sql:sqlite.db --with-mocks
+
 cd srv 
+
 mvn spring-boot:run
